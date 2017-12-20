@@ -1,0 +1,8 @@
+if building like this:
+https://github.com/JesusFreke/smali/wiki
+the final jar won't have the correct manifest (with the main class index and other needed stuff).
+
+To correctly build, open the cloned repo in Android Studio, then tap on the top right Gradle button,
+then for both :smali and :backsmali entries expand Tasks>other and double tap on "fatJar"
+Then grab the final "fat" jars from smali/build/libs and backsmali/build/libs
+and put them into Superr kitchen or wherever you need them
